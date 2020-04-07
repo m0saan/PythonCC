@@ -1,0 +1,6 @@
+In Python you can automate staff.
+In Python you can work with several files and read or write to them.
+In Python you can create list of favourite food.
+In Python you can create machine learning models.
+In Python you can do more.
+In Python...

@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/usr/local/bin/python3",
+    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "Ubuntu Mono, Monaco, 'Courier New', monospace"
+}

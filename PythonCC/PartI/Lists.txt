@@ -1,0 +1,105 @@
+What Is a list?
+A list is a collection of items in a particular order.
+You can make a list that includes the letters of the alphabet, digits from 0–9, or names of peoples.
+You can put anything you want into a list, and the items in your list don’t have to be
+related in any particular way.
+In Python, square brackets ([]) indicate a list, and individual elements in the list
+are separated by commas.
+Here’s a simple example of a list that contains a few kinds of bicycles:
+
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles)
+
+Accessing Elements in a List :
+Lists are ordered collections, so you can access any element in a list by
+knowing the index of the item desired.
+To access an ele- ment in a list, write the name of the list followed
+by the index of the item enclosed in square brackets.
+
+print(bicycles[0])
+
+Index Positions Start at 0, Not 1
+Python considers the first item in a list to be at position 0, not position 1.
+If you’re receiving unexpected results, determine whether you are making a simple off-by-one error.
+you can get any element you want from a list utilizing index : n - 1, Where n is the number of elements
+in the list.
+
+You can figure out the number of elements in a list using the built-in-function <len()>
+
+print(len(bicycles))
+
+You can access the last element in a list. By asking for the item at index -1
+
+print(bicycles[-1])
+
+Changing, adding, and removing elements:
+Most lists you create will be dynamic, meaning you’ll build a list and
+then add and remove, change elements from it.
+
+    Modifying Elements in a List:
+        To change an element, use the name of the list followed by the index of the element
+        you want to change, and then provide the new value you want that item to have.
+
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    print(motorcycles)
+    vmotorcycles[0] = 'ducati'
+    print(motorcycles)
+
+    Adding Elements to a List:
+        The simplest way to add a new element to a list is to append the item to the list.
+        and then the element is added to the end of the list.
+
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    print(motorcycles)
+    motorcycles.append('ducati')
+    print(motorcycles)
+
+    Inserting Elements into a List:
+        You can add a new element at any position in your list by using the insert() method.
+        You do this by specifying the index of the new element and the value of the new item.
+    
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    motorcycles.insert(0, 'ducati')
+    print(motorcycles)
+
+    Removing Elements from a List:
+        removing an Item Using the del Statement:
+            If you already know the position of the item you want to remove better option is to use
+            the <del> Statement.
+        
+        motorcycles = ['honda', 'yamaha', 'suzuki']
+        print(motorcycles)
+        del motorcycles[0]
+        print(motorcycles)
+
+        removing an Item Using the pop() Method :
+            The pop() method removes the last item in a list, but it lets you work with that item
+            after removing it.
+
+        motorcycles = ['honda', 'yamaha', 'suzuki']
+        print(motorcycles)
+        popped_motorcycle = motorcycles.pop()
+        print(motorcycles)
+        print(popped_motorcycle)
+
+            You can actually use pop() to remove an item in a list at any position
+            by including the index of the item you want to remove in parentheses.
+
+        motorcycles = ['honda', 'yamaha', 'suzuki']
+        first_owned = motorcycles.pop(0)
+        print('The first motorcycle I owned was a ' + first_owned.title() + '.')
+
+        removing an Item by Value :
+            Sometimes you won’t know the position of the value you want to remove from a list.
+            If you only know the value of the item you want to remove, you can use the remove() method.
+        
+        motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+        print(motorcycles)
+        motorcycles.remove('ducati')
+        print(motorcycles)
+
+If you’re unsure whether to use the del statement or the pop() method, here’s a simple way to decide:
+->When you want to delete an item from a list and not use that item in any way, use the del statement.
+->If you want to use an item as you remove it, use the pop() method.
+
+
